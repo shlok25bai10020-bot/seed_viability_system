@@ -27,11 +27,21 @@ public class SeedBatch {
     public String getSupplierName() {
          return supplier_Name; 
         }
-    public LocalDate getHarvestDate() { return harvest_date; }
-    public LocalDate getExpiryDate() { return expiry_date; }
-    public double getQuantity() { return quantity; }
-    public void setQuantity(double quantity) { this.quantity = quantity; }
-    public double getInitialGerminationRate() { return initial_germination_rate; }
+    public LocalDate getHarvestDate() { 
+        return harvest_date; 
+    }
+    public LocalDate getExpiryDate() { 
+        return expiry_date; 
+    }
+    public double getQuantity() {
+         return quantity;
+         }
+    public void setQuantity(double quantity) {
+         this.quantity = quantity; 
+        }
+    public double getInitialGerminationRate() {
+         return initial_germination_rate; 
+        }
     public void setInitialGerminationRate(double initial_germination_rate) { 
         this.initial_germination_rate = initial_germination_rate; 
     }
