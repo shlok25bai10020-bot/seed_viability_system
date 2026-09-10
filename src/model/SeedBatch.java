@@ -7,6 +7,7 @@ public class SeedBatch {
     private final LocalDate harvest_date;
     private final LocalDate expiry_date;
     private double quantity;
+    private double initialViability;
     private double initial_germination_rate;
 
     public SeedBatch(String batch_Id,CropType crop_type, String supplier_Name, LocalDate expiry_date, LocalDate harvest_date, double quantity, double initial_germination_rate){
@@ -17,6 +18,17 @@ public class SeedBatch {
         this.expiry_date=expiry_date;
         this.quantity=quantity;
         this.initial_germination_rate=initial_germination_rate;
+    }
+    public SeedBatch(String batch_Id, CropType crop_type, double quantity, 
+                     double initialViability, LocalDate harvest_date, LocalDate expiry_date) {
+        this.batch_Id = batch_Id;
+        this.crop_type = crop_type;
+        this.supplier_Name = "DEFAULT_SUPPLIER";
+        this.quantity = quantity;
+        this.initialViability = initialViability;
+        this.initial_germination_rate = initialViability / 100.0;
+        this.harvest_date = harvest_date;
+        this.expiry_date = expiry_date;
     }
     public String getBatchId() { 
         return batch_Id; 
@@ -39,6 +51,12 @@ public class SeedBatch {
     public void setQuantity(double quantity) {
          this.quantity = quantity; 
         }
+    public double getInitialViability() {
+        return initialViability;
+    }
+    public void setInitialViability(double initialViability) {
+        this.initialViability = initialViability;
+    }
     public double getInitialGerminationRate() {
          return initial_germination_rate; 
         }

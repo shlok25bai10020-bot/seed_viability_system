@@ -21,5 +21,8 @@ public enum CropType {
     public double getStandardSeedRatePerHectareKg() {
         return StandardSeedRatePerHectareKg;
     }
+    public double getMinimumViabilityThreshold() {
+        return this.StandardGerminationRate * 100.0;
+    }
 }
 
