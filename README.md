@@ -18,9 +18,13 @@ Technologies Used:
 
 seed_viability_system/
 ├── src/
-│   ├── exception/         # Handles errors (like expired seeds or low stock)
-│   ├── model/             # Stores the seed data and crop types
-│   ├── service/           # Logic for calculations, inventory, and reports
-│   └── Main.java          # The interactive menu that runs the app
-├── README.md              # Project instructions and overview
-└── statement.md           # Project problem statement and scope
+│   ├── exception/         
+│   ├── model/             
+│   ├── service/          
+│   └── Main.java          
+├── README.md       
+└── statement.md           
+
+Course: Programming In Java
+Submitted by: Shlok Maheh Thakur
+Reg No.: 25BAI10020
